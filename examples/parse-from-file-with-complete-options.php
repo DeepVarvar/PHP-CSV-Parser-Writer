@@ -22,7 +22,7 @@ try {
         array(
             // now support only binary (single byte encoding) and utf-8
             'encoding' => CSV\Encoding::UTF_8,
-            // size of buffer must be great of lenght tokens
+            // size of buffer must be great of lenght of tokens
             'bufferSize' => 8,
             // custom line separator
             'lineSeparator' => "\r\n",
@@ -30,7 +30,7 @@ try {
             'fieldSeparator' => ',',
             // custom field enclosure
             'fieldEnclosure' => '"',
-            // returl line data has object (or array by default)
+            // return line data has object (or array by default)
             'lineHasObject' => true,
             // list of expected fields with default values of fields
             'expectedFields' => array(
