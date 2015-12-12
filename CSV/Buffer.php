@@ -117,7 +117,7 @@ class Buffer
                 $this->_reader = new BinaryReader($this);
             break;
             default:
-                throw new CSVParserException('Undefined encoding mode');
+                throw new Exception('Undefined encoding mode');
             break;
         }
         // custom buffer initialization
@@ -192,7 +192,7 @@ class Buffer
     public function shift($shiftSize = 1)
     {
         if ($shiftSize < 1) {
-            throw new CSVParserException(
+            throw new Exception(
                 'Size of shift must be greater than or equal to one byte'
             );
         }

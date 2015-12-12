@@ -50,7 +50,7 @@ class Parser
         } else if (is_string($resource)) {
             $this->_buffer = new StringBuffer($resource, $options);
         } else {
-            throw new CSVParserException('Unsuppoted type of source');
+            throw new Exception('Unsuppoted type of source');
         }
     }
 

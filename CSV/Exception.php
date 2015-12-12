@@ -5,12 +5,12 @@ namespace CSV;
 
 
 /**
- * CSVParserException class
+ * Exception class
  *
  * CSV parser exception type declaration
  */
 
-class CSVParserException extends \RuntimeException
+class Exception extends \RuntimeException
 {
     // nothing here, declaration only
 }
